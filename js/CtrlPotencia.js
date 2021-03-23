@@ -1,12 +1,13 @@
-"use strict";
-var forma = document.getElementById("forma"),
-resultado = document.getElementById("resultado");
-forma.addEventListener("submit", procesa, false);
-function procesa(){
-var res="";
-var base = parseInt(forma["base"].value);
-for (var i = 1; i <=11; i++) {
-res = res + "la potencia a la"+" "+ i +" "+ "es:" + Math.pow(base,i) + "\n";
-}
-forma["resultado"].value=res;
-}
+  
+/*  Initializa Firebase con la configuración del proyecto. Revisa la
+ * configuración en tu servidor de Firebase.  */
+// @ts-ignore
+firebase.initializeApp({
+    apiKey: "AIzaSyBKXKRaQCWdfiSCZR39wunK0QApZMhgeqE",
+    authDomain: "pauten43.firebaseapp.com",
+    projectId: "pauten43",
+    storageBucket: "pauten43.appspot.com",
+    messagingSenderId: "167024006136",
+    appId: "1:167024006136:web:2766577637b6ab37c43c0d",
+    measurementId: "G-S4KD63PHHW"
+    });
